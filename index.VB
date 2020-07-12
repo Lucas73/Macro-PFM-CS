@@ -9,7 +9,7 @@ Private Sub Workbook_Open() ' Evento que se desencadena cuando se abre el libro.
         On Error Resume Next
 ' Definimos una URL de destino donde enviaremos las peticiones GET
         Set objHTTP = CreateObject("WinHttp.WinHttpRequest.5.1")
-        Url = "http://192.168.1.63/?pruebaLucasConManejadorII"
+        Url = "http://REPLACE-FOR-END-POINT-SERVER/?QUERY-STRING"
         objHTTP.Open "GET", Url, False
         objHTTP.setRequestHeader "User-Agent", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)"
         objHTTP.setRequestHeader "Content-type", "application/x-www-form-urlencoded"
